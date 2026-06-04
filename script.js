@@ -1,83 +1,132 @@
 const adminWhatsApp = "6282361642705";
 const initialProductCount = 6;
 
+const brandLogos = [
+  { name: "Universitas Negeri Medan", image: "assets/brandlogo/unimed.jpg" },
+  { name: "SMAN 2 Tanjung", image: "assets/brandlogo/sman2tanjung.jpg" }
+];
+
+const testimonials = [
+  {
+    name: "Cak Susilo",
+    role: "Master Coach Sekjen IPF Pusat",
+    quote: "Special thanks untuk Hart Pickleball karena dari Sabang hingga Merauke bisa bermain pickleball.",
+    photo: "assets/testimonials/cak-susilo.jpg",
+    rating: 5
+  },
+  {
+    name: "Dicky",
+    role: "Pickleball Antusias, MPC Semarang",
+    quote: "Overall secara keseluruhan lebih enak. Buat kontrol dan tenaga lebih oke, mukul nggak perlu banyak tenaga. Buat ding di depan net pun juga lebih oke.",
+    photo: "assets/testimonials/dicky.jpg",
+    rating: 5
+  },
+  {
+    name: "Eli Susanti",
+    role: "Pickleball Antusias, MPC Semarang",
+    quote: "Baru coba keluaran terbaru, ternyata enak dipake. Lebih mantul.",
+    photo: "assets/testimonials/eli-susanti.jpg",
+    rating: 5
+  },
+  {
+    name: "Helmi",
+    role: "Pickleball Antusias",
+    quote: "Saya menggunakan Hart Flash. Gripnya cukup panjang dan sangat pas, cocok buat saya mantan petenis. Power dan kontrolnya sangat cocok.",
+    photo: "assets/testimonials/helmi.jpg",
+    rating: 5
+  },
+  {
+    name: "Ibu Evy",
+    role: "Pickleball Antusias, MPC Semarang",
+    quote: "Aku suka pakai ini, sangat nyaman digunakan dan lebih tertata. Bolanya melenting, tidak usah pakai power.",
+    photo: "assets/testimonials/ibu-evy.png",
+    rating: 5
+  },
+  {
+    name: "Sapto Wibowo",
+    role: "Dosen Prodi PJKR FIKK Unesa",
+    quote: "Nyaman dipakai, kualitasnya oke, jos.",
+    photo: "assets/testimonials/sapto-wibowo.jpg",
+    rating: 5
+  }
+];
+
+const communitySlides = [
+  { image: "assets/community/courtservices-01.png", alt: "Tim layanan lapangan Andil Sport" },
+  { image: "assets/community/courtservices-02.png", alt: "Wasit dan pelatih pickleball Andil Sport" },
+  { image: "assets/community/courtservices-03.png", alt: "Komunitas layanan pickleball Andil Sport" }
+];
+
 const products = [
   {
-    name: "Hart Pro Series Paddle",
+    name: "Hart Club Pickleball",
     category: "paddle",
-    price: "Rp 1.250.000",
-    description: "Paddle premium untuk kontrol, power, dan feel stabil saat rally panjang.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Hart+Pro+Paddle",
-    badge: "Best seller"
+    price: "Rp 1.000.000",
+    description: "Paddle Hart untuk pemain yang mulai rutin latihan dan butuh feel stabil.",
+    image: "assets/products/hart-club-pickleball.jpg",
+    badge: "Club"
   },
   {
-    name: "Hart Lite Series Paddle",
+    name: "Hart Tournament Pickle Ball (Injection Moulding)",
+    category: "bola",
+    price: "Rp 160.000",
+    description: "Bola pickleball Hart untuk kebutuhan latihan, pertandingan, dan komunitas.",
+    image: "assets/products/hart-tournament-pickle-ball-injection-moulding.jpg",
+    badge: "Tournament"
+  },
+  {
+    name: "Pickleball Paddle Hart Apache XT7",
+    category: "paddle",
+    price: "Rp 500.000",
+    description: "Paddle entry-level untuk pemain baru yang ingin gear ringan dan mudah dikontrol.",
+    image: "assets/products/pickleball-paddle-hart-apache-xt7.jpg",
+    badge: "Starter"
+  },
+  {
+    name: "Pickleball Paddle Hart Attacker S7",
     category: "paddle",
     price: "Rp 850.000",
-    description: "Bobot ringan untuk pemain pemula sampai menengah yang butuh gerak cepat.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Hart+Lite+Paddle",
-    badge: "Ringan"
+    description: "Paddle untuk pemain yang mencari kombinasi power dan respons cepat.",
+    image: "assets/products/pickleball-paddle-hart-attacker-s7.jpg",
+    badge: "Power"
   },
   {
-    name: "Hart Control Paddle",
+    name: "Pickleball Paddle Hart Drax D7",
     category: "paddle",
-    price: "Rp 990.000",
-    description: "Pilihan seimbang untuk drop shot, reset, dan permainan net.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Hart+Control",
-    badge: "Kontrol"
+    price: "Rp 2.200.000",
+    description: "Paddle premium untuk performa kompetitif dengan kontrol bola lebih presisi.",
+    image: "assets/products/pickleball-paddle-hart-drax-d7.jpg",
+    badge: "Premium"
   },
   {
-    name: "Hart Outdoor Balls Isi 3",
-    category: "bola",
-    price: "Rp 150.000",
-    description: "Bola outdoor dengan pantulan konsisten untuk lapangan terbuka.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Outdoor+Balls",
-    badge: "Outdoor"
+    name: "Pickleball Paddle Hart Infinity 700",
+    category: "paddle",
+    price: "Rp 3.250.000",
+    description: "Paddle high-end untuk pemain yang butuh stabilitas dan touch saat rally.",
+    image: "assets/products/pickleball-paddle-hart-infinity-700.jpg",
+    badge: "High-end"
   },
   {
-    name: "Hart Indoor Balls Isi 3",
-    category: "bola",
-    price: "Rp 150.000",
-    description: "Bola indoor untuk kontrol lebih halus di permukaan lapangan tertutup.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Indoor+Balls",
-    badge: "Indoor"
+    name: "Pickleball Paddle Hart Optimus RX IV",
+    category: "paddle",
+    price: "Rp 1.500.000",
+    description: "Paddle serbaguna untuk kontrol, power, dan transisi permainan cepat.",
+    image: "assets/products/pickleball-paddle-hart-optimus-rx-iv.jpg",
+    badge: "All round"
   },
   {
-    name: "Hart Training Balls Pack",
-    category: "bola",
-    price: "Rp 275.000",
-    description: "Paket bola latihan untuk klub, kelas, dan sesi drilling rutin.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Training+Balls",
-    badge: "Paket"
-  },
-  {
-    name: "Hart Pro Overgrip Isi 3",
-    category: "aksesoris",
-    price: "Rp 75.000",
-    description: "Grip tambahan yang menyerap keringat dan menjaga pegangan tetap mantap.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Overgrip",
-    badge: "Aksesori"
-  },
-  {
-    name: "Hart Sling Bag",
-    category: "aksesoris",
-    price: "Rp 350.000",
-    description: "Tas ringkas untuk membawa paddle, bola, botol, dan barang kecil.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Sling+Bag",
-    badge: "Tas"
-  },
-  {
-    name: "Hart Court Towel",
-    category: "aksesoris",
-    price: "Rp 95.000",
-    description: "Handuk lapangan untuk latihan intens dan match day.",
-    image: "https://placehold.co/720x540/f5f9ee/172415?text=Court+Towel",
-    badge: "Latihan"
+    name: "Pickleball Paddle Hart X-Boost 117",
+    category: "paddle",
+    price: "Rp 2.750.000",
+    description: "Paddle performa tinggi untuk pemain yang ingin pukulan agresif dan solid.",
+    image: "assets/products/pickleball-paddle-hart-x-boost-117.jpg",
+    badge: "Pro"
   }
 ];
 
 let activeFilter = "all";
 let expanded = false;
+let testimonialScrollTimer;
 
 const productGrid = document.getElementById("productGrid");
 const viewMoreBtn = document.getElementById("viewMoreBtn");
@@ -86,12 +135,33 @@ const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 const scrollTopBtn = document.getElementById("scrollTop");
 const orderForm = document.getElementById("orderForm");
+const brandLogoTrack = document.getElementById("brandLogoTrack");
+const testimonialTrack = document.getElementById("testimonialTrack");
+const testimonialDots = document.getElementById("testimonialDots");
+const testimonialPrev = document.getElementById("testimonialPrev");
+const testimonialNext = document.getElementById("testimonialNext");
+const serviceSlideTrack = document.getElementById("serviceSlideTrack");
+const serviceWaBtn = document.getElementById("serviceWaBtn");
 
 const categoryLabel = {
   paddle: "Paddle",
   bola: "Bola",
   aksesoris: "Aksesoris"
 };
+
+function renderBrandLogos() {
+  const repeatCount = Math.max(8, Math.ceil(16 / brandLogos.length));
+  const logoSet = Array.from({ length: repeatCount }, () => brandLogos).flat().map((logo) => `
+    <figure class="brand-logo-item">
+      <img src="${logo.image}" alt="${logo.name}" loading="lazy">
+    </figure>
+  `).join("");
+
+  brandLogoTrack.innerHTML = `
+    <div class="logo-set">${logoSet}</div>
+    <div class="logo-set" aria-hidden="true">${logoSet}</div>
+  `;
+}
 
 function visibleProducts() {
   const filtered = activeFilter === "all"
@@ -142,6 +212,127 @@ function wireProductButtons() {
   });
 }
 
+function renderTestimonials() {
+  const loopedTestimonials = [testimonials[testimonials.length - 1], ...testimonials, testimonials[0]];
+
+  testimonialTrack.innerHTML = loopedTestimonials.map((item, index) => {
+    const realIndex = (index - 1 + testimonials.length) % testimonials.length;
+
+    return `
+    <article class="testimonial-card" data-slide="${index}" data-real-index="${realIndex}">
+      <div class="testimonial-photo">
+        <img src="${item.photo}" alt="Foto ${item.name}" loading="lazy">
+      </div>
+      <div class="testimonial-content">
+        <div class="stars" aria-label="${item.rating} bintang">${"★".repeat(item.rating)}</div>
+        <p>"${item.quote}"</p>
+        <div>
+          <strong>${item.name}</strong>
+          <span>${item.role}</span>
+        </div>
+      </div>
+    </article>
+  `;
+  }).join("");
+
+  testimonialDots.innerHTML = testimonials.map((item, index) => `
+    <button class="slider-dot${index === 0 ? " active" : ""}" type="button" data-dot="${index}" aria-label="Lihat testimoni ${item.name}"></button>
+  `).join("");
+
+  testimonialDots.querySelectorAll("[data-dot]").forEach((button) => {
+    button.addEventListener("click", () => scrollToTestimonial(Number(button.dataset.dot)));
+  });
+
+  window.requestAnimationFrame(() => {
+    scrollToVisualTestimonial(1, "auto");
+    updateTestimonialDots();
+  });
+}
+
+function scrollToTestimonial(index) {
+  scrollToVisualTestimonial(index + 1, "smooth");
+}
+
+function scrollToVisualTestimonial(index, behavior = "smooth") {
+  const slide = testimonialTrack.querySelector(`[data-slide="${index}"]`);
+  if (!slide) return;
+  const centeredLeft = slide.offsetLeft - ((testimonialTrack.clientWidth - slide.clientWidth) / 2);
+  testimonialTrack.scrollTo({ left: centeredLeft, behavior });
+}
+
+function getClosestTestimonial() {
+  const slides = [...testimonialTrack.querySelectorAll("[data-slide]")];
+  if (!slides.length) return null;
+
+  const trackCenter = testimonialTrack.scrollLeft + (testimonialTrack.clientWidth / 2);
+  const activeVisualIndex = slides.reduce((closestIndex, slide, index) => {
+    const currentDistance = Math.abs(slide.offsetLeft + (slide.clientWidth / 2) - trackCenter);
+    const closestDistance = Math.abs(slides[closestIndex].offsetLeft + (slides[closestIndex].clientWidth / 2) - trackCenter);
+    return currentDistance < closestDistance ? index : closestIndex;
+  }, 0);
+
+  return { slides, slide: slides[activeVisualIndex], visualIndex: activeVisualIndex };
+}
+
+function updateTestimonialDots() {
+  const closest = getClosestTestimonial();
+  if (!closest) return;
+
+  const activeIndex = Number(closest.slide.dataset.realIndex);
+
+  testimonialDots.querySelectorAll(".slider-dot").forEach((dot, index) => {
+    dot.classList.toggle("active", index === activeIndex);
+  });
+
+  closest.slides.forEach((slide) => {
+    slide.classList.toggle("is-active", slide === closest.slide);
+  });
+}
+
+function normalizeTestimonialLoop() {
+  const closest = getClosestTestimonial();
+  if (!closest) return;
+
+  if (closest.visualIndex === 0) {
+    scrollToVisualTestimonial(testimonials.length, "auto");
+  }
+
+  if (closest.visualIndex === testimonials.length + 1) {
+    scrollToVisualTestimonial(1, "auto");
+  }
+
+  updateTestimonialDots();
+}
+
+function moveTestimonial(direction) {
+  const closest = getClosestTestimonial();
+  if (!closest) return;
+  scrollToVisualTestimonial(closest.visualIndex + direction);
+}
+
+function renderServiceSlides() {
+  serviceSlideTrack.innerHTML = communitySlides.map((slide) => `
+    <figure class="service-slide">
+      <img src="${slide.image}" alt="${slide.alt}" loading="lazy">
+    </figure>
+  `).join("");
+
+  const serviceMessage = "Halo Andil Sport, saya ingin informasi layanan wasit profesional bersertifikasi dan pelatih pickleball berpengalaman. Mohon detail paket, jadwal, dan biaya.";
+  serviceWaBtn.href = `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(serviceMessage)}`;
+}
+
+function startServiceSlider() {
+  const totalSlides = communitySlides.length;
+  let currentSlide = 0;
+
+  if (totalSlides <= 1 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  window.setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    serviceSlideTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }, 5000);
+}
+
 function observeReveals() {
   const revealItems = document.querySelectorAll(".reveal:not(.is-visible)");
 
@@ -188,6 +379,14 @@ viewMoreBtn.addEventListener("click", () => {
   expanded = !expanded;
   renderProducts();
 });
+
+testimonialPrev.addEventListener("click", () => moveTestimonial(-1));
+testimonialNext.addEventListener("click", () => moveTestimonial(1));
+testimonialTrack.addEventListener("scroll", () => {
+  window.requestAnimationFrame(updateTestimonialDots);
+  window.clearTimeout(testimonialScrollTimer);
+  testimonialScrollTimer = window.setTimeout(normalizeTestimonialLoop, 140);
+}, { passive: true });
 
 navToggle.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("open");
@@ -243,5 +442,9 @@ function showToast(message) {
 }
 
 document.getElementById("year").textContent = new Date().getFullYear();
+renderBrandLogos();
+renderTestimonials();
+renderServiceSlides();
 renderProducts();
 observeReveals();
+startServiceSlider();

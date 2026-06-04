@@ -3,24 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Andil Sport menyediakan katalog peralatan olahraga dan perlengkapan pickleball. Pesan cepat melalui WhatsApp.">
-  <title>Andil Sport | Katalog Peralatan Olahraga</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23a9d91d' stroke='%23111712' stroke-width='4'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-size='19' font-weight='700' fill='%23111712'%3EAS%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Andil Sport menyediakan katalog peralatan pickleball Hart original, konsultasi gear gratis, layanan pemesanan WhatsApp, wasit, dan pelatih pickleball.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f2d24">
+  <link rel="canonical" href="https://andilsport.id/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Andil Sport">
+  <meta property="og:title" content="Andil Sport | Katalog Peralatan Pickleball Hart">
+  <meta property="og:description" content="Belanja perlengkapan pickleball Hart original, konsultasi gear gratis, dan pesan langsung melalui WhatsApp.">
+  <meta property="og:url" content="https://andilsport.id/">
+  <meta property="og:image" content="https://andilsport.id/assets/brandlogo/fav-andilsport.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Andil Sport | Katalog Peralatan Pickleball Hart">
+  <meta name="twitter:description" content="Katalog perlengkapan pickleball Hart original, konsultasi gear gratis, dan pemesanan cepat lewat WhatsApp.">
+  <meta name="twitter:image" content="https://andilsport.id/assets/brandlogo/fav-andilsport.png">
+  <title>Andil Sport | Katalog Peralatan Pickleball Hart</title>
+  <link rel="icon" type="image/png" href="assets/brandlogo/fav-andilsport.png">
+  <link rel="apple-touch-icon" href="assets/brandlogo/fav-andilsport.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "@id": "https://andilsport.id/#store",
+      "name": "Andil Sport",
+      "url": "https://andilsport.id/",
+      "description": "Katalog peralatan pickleball Hart original, konsultasi gear gratis, dan layanan pemesanan melalui WhatsApp.",
+      "image": "https://andilsport.id/assets/brandlogo/fav-andilsport.png",
+      "logo": "https://andilsport.id/assets/brandlogo/logo-andilsport.svg",
+      "telephone": "+6282361642705",
+      "areaServed": "Indonesia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Deli Serdang",
+        "addressRegion": "Sumatera Utara",
+        "addressCountry": "ID"
+      },
+      "sameAs": [
+        "https://www.instagram.com/andilsport.id/"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Katalog Andil Sport",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Paddle pickleball Hart"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Bola pickleball Hart"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Layanan wasit dan pelatih pickleball"
+          }
+        ]
+      }
+    }
+  </script>
 </head>
 <body>
   <header class="site-header" id="top">
     <nav class="nav-shell" aria-label="Navigasi utama">
       <a href="#top" class="brand" aria-label="Andil Sport">
-        <span class="brand-mark">AS</span>
-        <span>
+        <img class="brand-logo" src="assets/brandlogo/logo-andilsport.svg" alt="Andil Sport">
+        <!-- <span>
           <strong>Andil Sport</strong>
           <small>Katalog peralatan olahraga</small>
-        </span>
+        </span> -->
       </a>
 
       <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false">
@@ -50,11 +106,6 @@
               <i class="ph ph-whatsapp-logo"></i> Tanya admin
             </a>
           </div>
-          <div class="hero-stats reveal" aria-label="Keunggulan Andil Sport">
-            <div><strong>100%</strong><span>produk original</span></div>
-            <div><strong>1:1</strong><span>bantu pilih gear</span></div>
-            <div><strong>WIB</strong><span>respon jam kerja</span></div>
-          </div>
         </div>
 
         <div class="hero-visual reveal" aria-label="Ilustrasi katalog produk olahraga">
@@ -71,6 +122,14 @@
               <span>Kurasi produk siap pesan</span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-marquee-section" aria-label="Logo instansi dan partner">
+      <div class="container">
+        <div class="logo-marquee reveal">
+          <div class="logo-track" id="brandLogoTrack"></div>
         </div>
       </div>
     </section>
@@ -116,7 +175,6 @@
           <button class="filter-btn active" type="button" data-filter="all">Semua</button>
           <button class="filter-btn" type="button" data-filter="paddle">Paddle</button>
           <button class="filter-btn" type="button" data-filter="bola">Bola</button>
-          <button class="filter-btn" type="button" data-filter="aksesoris">Aksesoris</button>
         </div>
 
         <div class="product-grid" id="productGrid"></div>
@@ -128,29 +186,37 @@
 
     <section class="section-pad testimonials" id="testimoni">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Testimoni</p>
-          <h2>Pelanggan butuh produk jelas, stok jelas, dan admin yang gampang dihubungi.</h2>
+        <div class="section-head split reveal">
+          <div>
+            <p class="eyebrow">Testimoni</p>
+            <h2>Pelanggan butuh produk jelas, stok jelas, dan admin yang gampang dihubungi.</h2>
+          </div>
+          <div class="slider-actions" aria-label="Navigasi testimoni">
+            <button class="slider-btn" id="testimonialPrev" type="button" aria-label="Testimoni sebelumnya"><i class="ph ph-arrow-left"></i></button>
+            <button class="slider-btn" id="testimonialNext" type="button" aria-label="Testimoni berikutnya"><i class="ph ph-arrow-right"></i></button>
+          </div>
         </div>
-        <div class="testimonial-grid">
-          <article class="testimonial-card reveal">
-            <div class="stars" aria-label="5 bintang">★★★★★</div>
-            <p>"Admin bantu pilih paddle yang cocok buat pemula. Barang datang rapi dan sesuai info."</p>
-            <strong>Raka</strong>
-            <span>Pemain komunitas</span>
-          </article>
-          <article class="testimonial-card reveal">
-            <div class="stars" aria-label="5 bintang">★★★★★</div>
-            <p>"Pesan bola untuk latihan klub. Konfirmasi stok cepat, pengiriman aman."</p>
-            <strong>Dina</strong>
-            <span>Koordinator klub</span>
-          </article>
-          <article class="testimonial-card reveal">
-            <div class="stars" aria-label="5 bintang">★★★★★</div>
-            <p>"Detail produk dijelaskan singkat dan jelas. Enak buat repeat order."</p>
-            <strong>Fajar</strong>
-            <span>Panitia event</span>
-          </article>
+        <div class="testimonial-shell reveal">
+          <div class="testimonial-track" id="testimonialTrack"></div>
+        </div>
+        <div class="slider-dots" id="testimonialDots" aria-label="Indikator testimoni"></div>
+      </div>
+    </section>
+
+    <section class="service-section">
+      <div class="container">
+        <div class="service-banner reveal">
+          <div class="service-media" aria-label="Foto komunitas pickleball">
+            <div class="service-slide-track" id="serviceSlideTrack"></div>
+          </div>
+          <div class="service-copy">
+            <p class="eyebrow">Layanan Lapangan</p>
+            <h2>Wasit bersertifikasi dan pelatih berpengalaman untuk acara pickleball.</h2>
+            <p>Kami membantu kebutuhan pertandingan, fun match, coaching clinic, dan sesi latihan komunitas dengan tim yang paham alur lapangan.</p>
+            <a class="btn btn-primary" id="serviceWaBtn" href="https://wa.me/6282361642705" target="_blank" rel="noreferrer">
+              Informasi lebih lanjut <i class="ph ph-whatsapp-logo"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -162,9 +228,27 @@
           <h2>Kirim detail pesanan ke WhatsApp admin.</h2>
           <p>Isi nama, nomor, minat produk, dan catatan. Sistem akan membuka WhatsApp dengan pesan yang sudah disusun.</p>
           <div class="order-steps">
-            <span><i class="ph ph-magnifying-glass"></i>Pilih produk</span>
-            <span><i class="ph ph-chat-circle-text"></i>Konfirmasi stok</span>
-            <span><i class="ph ph-package"></i>Kirim pesanan</span>
+            <div class="timeline-step">
+              <span class="step-number">1</span>
+              <div>
+                <strong>Pilih produk</strong>
+                <p>Cek katalog, kategori, dan produk yang sesuai kebutuhan latihan.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="step-number">2</span>
+              <div>
+                <strong>Konfirmasi stok</strong>
+                <p>Admin memastikan ketersediaan, harga, dan opsi pengiriman.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="step-number">3</span>
+              <div>
+                <strong>Kirim pesanan</strong>
+                <p>Detail pesanan dikirim ke WhatsApp untuk proses lanjutan.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -202,7 +286,7 @@
         <div class="contact-list reveal">
           <a href="https://wa.me/6282361642705" target="_blank" rel="noreferrer"><i class="ph-fill ph-whatsapp-logo"></i> +62 823-6164-2705</a>
           <a href="https://www.instagram.com/andilsport.id/" target="_blank" rel="noreferrer"><i class="ph-fill ph-instagram-logo"></i> @andilsport.id</a>
-          <a href="https://maps.app.goo.gl/goQpdndEogVZmijs8" target="_blank" rel="noreferrer"><i class="ph-fill ph-map-pin"></i> Tangerang Selatan, Banten</a>
+          <a href="https://maps.app.goo.gl/goQpdndEogVZmijs8" target="_blank" rel="noreferrer"><i class="ph-fill ph-map-pin"></i> Deli Serdang, Sumatera Utara</a>
         </div>
       </div>
     </section>
@@ -215,13 +299,16 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a href="#top" class="brand footer-brand">
-        <span class="brand-mark">AS</span>
-        <span>
+        <img class="brand-logo" src="assets/brandlogo/logo-andilsport.svg" alt="Andil Sport">
+        <!-- <span>
           <strong>Andil Sport</strong>
           <small>Peralatan olahraga</small>
-        </span>
+        </span> -->
       </a>
-      <p>&copy; <span id="year"></span> Andil Sport. Reseller resmi Hart Pickleball Indonesia.</p>
+      <div class="footer-copy">
+        <p>&copy; <span id="year"></span> Andil Sport. Reseller resmi Hart Pickleball Indonesia.</p>
+        <p>Crafted with <span aria-label="love">❤️</span> by <a href="https://muezatia.web.id" target="_blank" rel="noreferrer">Muezatia</a></p>
+      </div>
     </div>
   </footer>
 
