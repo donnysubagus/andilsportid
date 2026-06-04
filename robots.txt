@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://andilsport.id/sitemap.xml
+Sitemap: https://andilsport.my.id/sitemap.xml
