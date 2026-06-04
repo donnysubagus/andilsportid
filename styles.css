@@ -1257,6 +1257,10 @@ code {
     display: none;
   }
 
+  .brand-logo {
+    width: 50%;
+  }
+
   h1 {
     font-size: clamp(2.35rem, 10.6vw, 2.78rem);
     line-height: 0.98;
@@ -1394,12 +1398,23 @@ code {
   }
 
   .footer-inner {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-brand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-brand .brand-logo {
+    width: 50%;
+    max-width: 180px;
   }
 
   .footer-copy {
-    text-align: left;
+    text-align: center;
   }
 }
 
